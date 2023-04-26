@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shopping List Application</title>
+    <!-- Link to the style.css file -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+
+      <header>
+          <h1>Shopping List</h1>
+      </header>
+
+      <section>
+        <div id="main-div">
+          <div id="product-add-form">
+            <form>
+              <input required type="text" id="item" placeholder="Item Name" >
+              <input required type="number" id="qty" placeholder="Quantity" >
+              <input  type = "submit" value="Add">
+            </form>
+          </div>
+    
+          
+          <!-- A div to display the count of number of items purchased and yet to be purchased -->
+          <div id="counter">
+            
+          </div>
+        </div>
+
+        <!-- A div to display the items in shopping list and purchased list -->
+        <div id="items-list">
+        <!-- A div to display the items in shopping list -->
+          <div id="shopping-list">
+          </div>
+        <!-- A div to display the items in purchased list -->
+          <div id="shopped-list">
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- script tag to attach app.js with index.html -->
+      <script src="app.js"></script>
+  </body>
+
+</html>

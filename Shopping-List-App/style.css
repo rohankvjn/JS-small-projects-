@@ -1,0 +1,140 @@
+/*
+  by default body tag has some margin to remove that use margin:0 for body tag
+*/
+body{
+  margin: 0;
+}
+
+/*
+  Tag selector
+  header has the styles of 
+  1) text alignment center 
+  2)forn style as italic 
+  3)box-shadow for look and feel
+  4)padding 
+  5)background color
+*/
+
+header{
+  text-align: center;
+  font-style: italic; 
+  box-shadow: 0 0 10px black;
+  padding: 10px;
+  background-color: yellow;
+}
+
+
+/*
+  Attribute selector
+  text box and number box has following styles
+  1)margin
+  2)width 
+  3)padding
+
+*/
+input[type="text"],input[type="number"]{
+  margin: 10px;
+  width: 250px;
+  padding: 5px;
+}
+
+
+/*
+  Attribute selector
+  submit button has the following styles
+  1)padding
+  2)margin
+  3)since submit is an inline element to make it as a block level element used the style display block
+*/
+input[type="submit"]{
+  padding:5px 15px;
+  margin:10px;
+  display:block;
+}
+
+/*
+  Id Selector
+  form with padding
+*/
+#product-add-form{
+  padding:10px;
+}
+
+
+/*
+  Tag Selector
+  for each list item in ul tag is given a padding of 10px
+*/
+ul li{
+  padding: 10px;
+}
+
+/*
+  Id Selector
+  items-list and main-div id selectors have the following styles
+  1)margin 
+  2)display:flex => to make them as a flex box so that the internal divisions can be aligned as our wish
+  3)remaining styles are for aligning the items to the baseline and the content center
+*/
+#items-list,#main-div{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  margin: 100px;
+}
+
+/*
+  Id Selector
+  shooping-list , product-add-form , shopped-list , counter  id selectors have the following styles
+  1)flex ratio as 1 => A number specifying how much the item will grow relative to the rest of the flexible item
+  2)box shadow for look and feel of browser
+  3)margin as 10px
+*/
+#shopping-list,#product-add-form,#shopped-list,#counter{
+  flex:1;
+  box-shadow:0 0 10px black;
+  margin: 10px;
+}
+
+
+/*
+  Id Selector
+  counter  id selector have the following styles
+  1)Display flex is the property of flex container to use flexbox.
+  2)The flexbox items are aligned at the center of the cross axis.
+  3)The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
+  4)The flex-direction CSS property sets how flex items are placed in the flex container defining the main axis and the direction 
+  5)background-color
+*/
+#counter{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: palegreen;
+}
+
+/*
+  Id along with tag selector
+  h2 element in element with items-list as id has following styles
+  1)text alignment center
+  2)font style as italic  
+*/
+#items-list h2{
+  text-align: center;
+  font-style: italic;
+}
+
+
+
+/*
+  Tag Selector 
+  span in li in ul element has following styles
+  1)float to right 
+  2)padding from the right side
+*/
+ul li span{
+  float: right;
+  padding-right: 10px;
+}
